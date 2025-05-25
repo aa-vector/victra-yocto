@@ -34,7 +34,7 @@ IMAGE_INSTALL += "victor"
 IMAGE_INSTALL += "wired"
 
 IMAGE_INSTALL += "avahi-daemon"
-IMAGE_INSTALL += "${@oe.utils.conditional('USER_BUILD', '1', '', 'neofetch', d)}"
+IMAGE_INSTALL += "neofetch"
 
 #
 # Other stuff
