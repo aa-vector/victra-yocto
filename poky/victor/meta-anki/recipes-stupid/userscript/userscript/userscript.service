@@ -1,0 +1,18 @@
+[Unit]
+Description=Run user script hook
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+
+# This service should be considered started even after the ExecStart line below
+# has finished.  If you want to run this service again, do:
+# systemctl stop update-engine.service
+# systemctl restart update-engine-oneshot
+RemainAfterExit=yes
+
+ExecStart=/sbin/userscript_run
+
+[Install]
+WantedBy=multi-user.target

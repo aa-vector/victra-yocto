@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+echo running userscript
+test -f /data/userscript.sh && bash /data/userscript.sh
+echo userscript finish
