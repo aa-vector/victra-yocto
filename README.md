@@ -1,6 +1,8 @@
 # victra
 
 aa's vector cfw, minimal changes on top of wireos
+![neofetch](https://github.com/user-attachments/assets/e76e5d53-d3fd-401e-a459-dc20b6b3e165)
+
 
 ## Submodules
 
