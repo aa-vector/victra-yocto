@@ -6,8 +6,8 @@ Before=sysinit.target
 
 [Service]
 Type=oneshot
-ExecStart=/usr/sbin/iptables-restore /etc/iptables/iptables.rules
-ExecReload=/usr/sbin/iptables-restore /etc/iptables/iptables.rules
+ExecStart=/usr/sbin/iptables-restore -w -- /etc/iptables/iptables.rules
+ExecReload=/usr/sbin/iptables-restore -w -- /etc/iptables/iptables.rules
 ExecStop=/etc/iptables/iptables-flush.sh
 RemainAfterExit=yes
 
