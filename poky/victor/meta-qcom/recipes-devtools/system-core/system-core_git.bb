@@ -96,10 +96,10 @@ do_install:append() {
       ln -sf ${systemd_unitdir}/system/init_post_boot.service \
           ${D}${systemd_unitdir}/system/ffbm.target.wants/init_post_boot.service
       install -m 0644 ${S}/debuggerd/init_debuggerd.service -D ${D}${systemd_unitdir}/system/init_debuggerd.service
-      ln -sf ${systemd_unitdir}/system/init_debuggerd.service \
-          ${D}${systemd_unitdir}/system/multi-user.target.wants/init_debuggerd.service
-      ln -sf ${systemd_unitdir}/system/init_debuggerd.service \
-          ${D}${systemd_unitdir}/system/ffbm.target.wants/init_debuggerd.service
+      #ln -sf ${systemd_unitdir}/system/init_debuggerd.service \
+      #    ${D}${systemd_unitdir}/system/multi-user.target.wants/init_debuggerd.service
+      #ln -sf ${systemd_unitdir}/system/init_debuggerd.service \
+      #    ${D}${systemd_unitdir}/system/ffbm.target.wants/init_debuggerd.service
       install -m 0644 ${S}/leproperties/leprop.service -D ${D}${systemd_unitdir}/system/leprop.service
       ln -sf ${systemd_unitdir}/system/leprop.service \
           ${D}${systemd_unitdir}/system/multi-user.target.wants/leprop.service
