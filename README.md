@@ -1,8 +1,6 @@
-# wire-os
+# victra
 
-The main repo for WireOS.
-
-WireOS serves as a nice, stable, and maintained base for Vector CFW.
+aa's vector cfw, minimal changes on top of wireos
 
 ## Submodules
 
