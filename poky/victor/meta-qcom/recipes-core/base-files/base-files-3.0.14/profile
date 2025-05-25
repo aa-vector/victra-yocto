@@ -31,6 +31,6 @@ export PATH PS1 OPIEDIR QPEDIR QTDIR EDITOR TERM
 
 alias ls="ls --color=auto"
 alias reboot="/sbin/reboot & exit"
-alias neofetch="neofetch --no_config --ascii_colors 2 --ascii /etc/vector-ascii"
+alias neofetch="neofetch --no_config --ascii_colors 4 --ascii /etc/vector-ascii"
 
 umask 022

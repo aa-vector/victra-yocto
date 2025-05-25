@@ -8,7 +8,7 @@ set -e
 # Hidden env vars:
 # 1. I_AM_THE_CREATOR_AND_WANT_TO_MAKE_THE_BUILD_AUTO_UPDATE: set to 1 if you want to inhibit the -au interaction
 
-CREATOR="Wire"
+CREATOR="aa"
 
 function usage() {
     echo "$1"

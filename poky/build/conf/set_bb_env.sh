@@ -82,7 +82,7 @@ function build-8009-robot-image() {
 function build-8009-robot-facdev-image() {
   unset_bb_env
   export MACHINE=apq8009-robot
-  export DISTRO=msm-perf
+  export DISTRO=victra
   export VARIANT=perf
   #export PRODUCT=robot
   export FACTORY="1"
@@ -92,7 +92,7 @@ function build-8009-robot-facdev-image() {
 function build-8009-robot-perf-image() {
   unset_bb_env
   export MACHINE=apq8009-robot
-  export DISTRO=msm-perf
+  export DISTRO=victra
   export VARIANT=perf
   export PRODUCT=robot
   cdbitbake machine-robot-image
@@ -101,7 +101,7 @@ function build-8009-robot-perf-image() {
 function build-8009-robot-oskr-image() {
   unset_bb_env
   export MACHINE=apq8009-robot
-  export DISTRO=msm-perf
+  export DISTRO=victra
   export VARIANT=perf
   export PRODUCT=robot
   export OSKR=1
@@ -207,7 +207,7 @@ function build-prod() {
 function clean-oskr() {
   unset_bb_env
   export MACHINE=apq8009-robot
-  export DISTRO=msm-perf
+  export DISTRO=victra
   export VARIANT=perf
   export PRODUCT=robot
   export OSKR=1
@@ -217,7 +217,7 @@ function clean-oskr() {
 function clean-dev() {
   unset_bb_env
   export MACHINE=apq8009-robot
-  export DISTRO=msm-perf
+  export DISTRO=victra
   export VARIANT=perf
   export PRODUCT=robot
   cdbitbake -c cleanall victor wired vic-cloud core-image-anki-initramfs rampost anki-version machine-robot-image system-conf prop-qti vic-engine update-engine
