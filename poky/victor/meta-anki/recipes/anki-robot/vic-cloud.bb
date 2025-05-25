@@ -133,6 +133,8 @@ do_install () {
     mkdir -p ${D}/anki/bin
     mkdir -p ${D}/anki/lib
     cp ${WORKSPACE}/anki/vector-cloud/build/* ${D}/anki/bin
+    # STUPID HACK
+    rm ${D}/anki/bin/vic-cloud.upx
     cp ${WORKSPACE}/anki/vector-cloud/armlibs/lib/libopus.so.0.7.0 ${D}/anki/lib/libopus.so.0
 }
 
